@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorpresa Para ti mi Amor BCode</title>
+    <title>Para Mi Princesa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
-    <div class="hearts-container" id="hearts-container"></div>
-    <div class="floating-hearts" id="floating-hearts"></div>
-    <div class="notification" id="notification">Haz clic en el sobre para abrir la carta</div>
-    
-    <div class="container" id="main-container">
-        <div class="header">
-            <h1>Para Ti Mi<span class="special-name floating">  Alessiague </span></h1>
-            <p style="color: white; text-shadow: 0 0 10px rgba(255,0,119,0.5);">Haz clic en el sobre para tu sorpresa</p>
-        </div>
+    <div class="premium-bg"></div>
+    <div class="hearts-background" id="hearts"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-content animate-in">
+                <h1>Te Quiero Mi Alessiague</h1>
+                <p>Eres la luz que ilumina mis días y la razón por la que mi corazón late con tanta fuerza.</p>
+            </div>
+        </header>
+
         
-        <div class="envelope-wrapper" id="envelope-wrapper">
-            <div class="envelope" id="envelope">
-                <div class="envelope-front">
-                    <div class="envelope-flap"></div>
-                    <i class="fas fa-heart" style="color: white; font-size: 3rem; animation: pulse 1.5s infinite;"></i>
+
+
+        <div class="qualities-section">
+            <div class="quality-card animate-in">
+                <div class="quality-icon"><i class="fas fa-heart"></i></div>
+                <h3>Tu Dulzura</h3>
+                <p>La ternura que irradias ilumina incluso los días más oscuros.</p>
+            </div>
+
+            <div class="quality-card animate-in" style="animation-delay: 0.2s">
+                <div class="quality-icon"><i class="fas fa-crown"></i></div>
+                <h3>Tu Elegancia</h3>
+                <p>La gracia con que te mueves por el mundo me deja sin aliento.</p>
+            </div>
+
+            <div class="quality-card animate-in" style="animation-delay: 0.4s">
+                <div class="quality-icon"><i class="fas fa-magic"></i></div>
+                <h3>Tu Encanto</h3>
+                <p>Esa magia especial que solo tú posees y que me hechizó por completo.</p>
+            </div>
+        </div>
+
+        <div class="love-counter animate-in">
+            <h2>Nuestra Historia</h2>
+            <div class="counter-items">
+                <div class="counter-item">
+                    <div class="counter-number" id="daysCount">0</div>
+                    <div class="counter-label">Días de Amor</div>
                 </div>
-                <div class="envelope-back">
-                    <div class="letter">
-                        <div class="paper-texture"></div>
-                        <div class="letter-content">
-                            <h2>Mi Amor</h2>
-                            <p>Eres la luz de mis días</p>
-                            <p>y la razón de mi sonrisa.</p>
-                            <p>Contigo todo es mejor.</p>
-                            <div class="signature">Te amo</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-heart" style="color: #ff4081; font-size: 2.5rem; animation: pulse 1.5s infinite; position: absolute; bottom: 10px; right: 10px;"></i>
+                <div class="counter-item">
+                    <div class="counter-number">∞</div>
+                    <div class="counter-label">Sonrisas</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number">∞</div>
+                    <div class="counter-label">Beso</div>
                 </div>
             </div>
         </div>
+
+        <button class="surprise-btn" id="surpriseBtn">
+            <i class="fas fa-heart"></i> Mi Promesa
+        </button>
     </div>
-    
-    <div class="fullscreen-letter" id="fullscreen-letter">
-        <div class="close-btn" id="close-btn">×</div>
-        <div class="paper-texture"></div>
-        <div class="fullscreen-letter-content">
-            <h2>MI Alessiague</h2>
-            <p>Eres la luz que ilumina mis días</p>
-            <p>y la razón de mi sonrisa eterna.</p>
-            <p>Contigo, cada momento es mágico</p>
-            <p>y mi corazón late más fuerte.</p>
-            <p>Tu presencia transforma lo ordinario en extraordinario,</p>
-            <p>y cada instante a tu lado es un tesoro que atesoro.</p>
-            <p>Tu sonrisa es mi alegría, tu mirada mi refugio,</p>
-            <p>y tu amor, el motor que impulsa mis sueños.</p>
-            <p>Te amo más de lo que las palabras pueden expresar.</p>
-            <div class="signature">Para siempre, Tu Novio Elmer</div>
+
+    <footer class="footer">
+        <p>Eres mi sueño hecho realidad</p>
+        <p class="eternal-love">Para toda la eternidad, mi princesa</p>
+    </footer>
+
+    <div class="message-reveal" id="revealMessage">
+        <div class="reveal-content">
+            <h2>Mi Juramento de Amor</h2>
+            <p>Prometo amarte en cada amanecer y en cada atardecer, en tus días de sol y en tus noches de lluvia. Seré
+                tu refugio cuando el mundo sea demasiado y tu cómplice en cada locura.</p>
+            <p>Prometo respetarte, admirarte y hacerte sentir como la princesa que eres. Cada día a tu lado es un regalo
+                que atesoro con todo mi corazón.</p>
+            <p>Eres mi eterno amor, mi razón de ser, y prometo demostrártelo cada día de nuestra vida.</p>
+            <button class="close-btn" id="closeBtn">Acepto tu amor</button>
         </div>
     </div>
 
-    
 </body>
 <script src="./js/script.js"></script>
+
 </html>
