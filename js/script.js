@@ -34,7 +34,7 @@ function getRandomHeartColor() {
 }
 
 const daysElement = document.getElementById('daysCount');
-const targetDays = 100;
+const targetDays = 103;
 let currentDays = 0;
 const duration = 3000;
 
